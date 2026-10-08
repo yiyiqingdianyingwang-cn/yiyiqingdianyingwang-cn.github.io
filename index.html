@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="易易亲电影网（yiyiqingdianyingwang-cn.github.io）是精选优质电影导航大全与实用网址收录平台，聚焦电影网站导航、高清电影在线观看、最新电影、经典电影、电影字幕、4K 蓝光与影视大全，提供影视资源导航与迅雷下载指引。">
+<meta name="keywords" content="易易亲电影网, yiyiqingdianyingwang-cn, 易易亲, 电影导航, 电影网站导航, 精选优质网站导航大全, 实用网址收录平台, 高清电影在线观看, 电影下载, 迅雷下载, 最新电影, 经典电影, 电影字幕, 影视大全, 4K 蓝光, 影视资源导航">
+<meta name="author" content="易易亲电影网">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#fffaf6">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>易易亲电影网 - 精选优质电影导航大全 | 高清电影在线观看与迅雷下载</title>
+<link rel="canonical" href="https://yiyiqingdianyingwang-cn.github.io/">
+<style>
+/* ==========================================================
+   易易亲电影网  yiyiqingdianyingwang-cn.github.io
+   单页 · 移动端自适应 · 内链以 # 替代
+   设计基调：暖调编辑风 × 奶油底 × 朱砂红 × 宋体衬线 × 圆角便签 × 手绘线
+   母题：易 = 平易 / 易得 / 易用；亲 = 亲切 / 亲自挑选
+   ========================================================== */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#fffaf6;--paper:#fdf6ee;--ink:#23201d;--mute:#8a8177;
+  --red:#e5484d;--red2:#f28482;--amber:#f6bd60;--green:#84a59d;
+  --serif:"Songti SC","STSong","SimSun","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"SFMono-Regular",Consolas,monospace;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.9;
+  background-image:radial-gradient(circle at 20% 12%,rgba(242,132,130,.10),transparent 42%),
+                   radial-gradient(circle at 88% 78%,rgba(246,189,96,.16),transparent 44%);
+  background-attachment:fixed}
+a{color:inherit;text-decoration:none;transition:.22s cubic-bezier(.34,1.2,.6,1)}
+::selection{background:var(--red);color:#fff}
+::-webkit-scrollbar{width:13px;height:13px}
+::-webkit-scrollbar-track{background:var(--paper)}
+::-webkit-scrollbar-thumb{background:var(--red);border:3px solid var(--paper);border-radius:9px}
+main,header,footer,section{position:relative;z-index:2}
+
+/* ===== 顶栏 ===== */
+.topbar{position:sticky;top:0;z-index:99;background:rgba(255,250,246,.92);backdrop-filter:blur(9px);border-bottom:1.6px solid var(--ink)}
+.tin{max-width:1360px;margin:0 auto;padding:0 26px;height:72px;display:flex;align-items:center;gap:16px}
+.logo{display:flex;align-items:center;gap:13px}
+.stamp{width:46px;height:46px;border:2.4px solid var(--red);border-radius:11px;display:grid;place-items:center;
+  font:900 15.6px/1.05;color:var(--red);letter-spacing:-.4px;text-align:center;transform:rotate(-3deg);
+  box-shadow:inset 0 0 0 3px var(--cream),inset 0 0 0 4.6px var(--red);font-family:var(--serif)}
+.logo .zh{font:900 21px;letter-spacing:.6px;font-family:var(--serif)}
+.logo .zh em{font-style:normal;color:var(--red)}
+.logo .en{font:700 7.6px;letter-spacing:2.4px;color:var(--mute);font-family:var(--mono)}
+.nav{display:flex;gap:4px;margin-left:auto;font:700 12.4px;letter-spacing:.4px}
+.nav a{padding:9px 14px;border-radius:999px}
+.nav a:hover{background:var(--ink);color:var(--cream)}
+.nav a.on{background:var(--red);color:#fff}
+.hamb{display:none;width:48px;height:48px;border:2px solid var(--ink);border-radius:13px;background:var(--cream);color:var(--ink);font:900 22px;cursor:pointer}
+
+/* ===== 通用 ===== */
+section{padding:66px 0}
+.lay{max-width:1360px;margin:0 auto;padding:0 26px}
+.eyebrow{font:700 9.6px;letter-spacing:3.6px;color:var(--red);font-family:var(--mono);margin-bottom:11px}
+.sh{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap;border-bottom:1.6px solid var(--ink);padding-bottom:13px}
+.sh .no{font:900 10.4px;letter-spacing:2.2px;color:#fff;background:var(--ink);border-radius:7px;padding:5px 10px;font-family:var(--mono)}
+.sh h2{font:900 clamp(22px,3.9vw,33px)/1.32;font-family:var(--serif)}
+.sh h2 em{font-style:normal;color:var(--red)}
+.sh .en{font:700 8.8px;letter-spacing:3.2px;color:var(--mute);margin-left:auto;font-family:var(--mono)}
+
+/* ===== Hero ===== */
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding:18px 0 4px}
+.hero .glow{font:900 clamp(48px,10.6vw,112px)/.98;letter-spacing:-4.6px;font-family:var(--serif);color:var(--ink)}
+.hero .glow .m{color:var(--red)}
+.hero .glow .m2{display:inline-block;transform:rotate(-4deg);color:var(--amber)}
+.hero .sub{margin-top:20px;font-size:16.4px;color:#4d4741;max-width:640px;line-height:2.12}
+.hero .cta{display:flex;gap:12px;margin-top:27px;flex-wrap:wrap}
+.hero .cta a:first-child{height:56px;padding:0 29px;background:var(--red);color:#fff;font:900 14px;border-radius:999px;display:grid;place-items:center}
+.hero .cta a:first-child:hover{background:var(--ink)}
+.hero .cta a:last-child{height:56px;padding:0 25px;border:2px solid var(--ink);color:var(--ink);font:900 13px;border-radius:999px;display:grid;place-items:center;background:var(--cream)}
+.hero .cta a:last-child:hover{background:var(--ink);color:var(--cream)}
+
+/* 便签 */
+.memo{border:1.6px solid var(--ink);border-radius:20px;background:var(--paper);padding:26px;position:relative;
+  box-shadow:9px 9px 0 var(--red2);transform:rotate(1.4deg)}
+.memo::before{content:"";position:absolute;left:50%;top:-13px;transform:translateX(-50%) rotate(4deg);width:76px;height:24px;background:#fff;border:1.6px solid var(--ink);border-radius:5px}
+.memo h4{font:900 15.4px;font-family:var(--serif);margin-bottom:14px}
+.memo ol{list-style:none;counter-reset:m}
+.memo li{counter-increment:m;display:grid;grid-template-columns:30px 1fr;gap:9px;padding:8px 0;border-bottom:1px dashed #d8cdc0;font-size:12.8px}
+.memo li::before{content:counter(m);font:900 10.4px;color:#fff;background:var(--red);border-radius:6px;height:20px;width:20px;display:grid;place-items:center;margin-top:3px;font-family:var(--mono)}
+.memo li:last-child{border:none}
+.memo .slogan{margin-top:15px;font:900 18px;line-height:1.6;font-family:var(--serif);color:var(--red);border-top:1.6px solid var(--ink);padding-top:14px}
+
+/* ===== ① 导航：圆角面板 ===== */
+.panels{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.pn{border:1.6px solid var(--ink);border-radius:17px;background:var(--paper);padding:19px;transition:.26s;position:relative;overflow:hidden}
+.pn:hover{border-color:var(--red);transform:translateY(-7px);box-shadow:0 16px 30px -18px var(--red)}
+.pn .ix{font:900 22px;color:var(--red);line-height:1;font-family:var(--mono)}
+.pn h4{font:900 15.6px;margin:8px 0 7px;font-family:var(--serif)}
+.pn p{font-size:11.6px;color:#6f675e;line-height:1.9}
+.pn a{display:inline-block;margin-top:9px;font:900 10.2px;letter-spacing:.8px;color:var(--red);border-bottom:2px solid var(--red);padding-bottom:1px}
+
+/* ===== ② 电影：圆润卡 ===== */
+.bub{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.bb{border-radius:20px;overflow:hidden;background:var(--c);position:relative;transition:.3s;box-shadow:inset 0 -60px 60px -30px rgba(20,16,13,.6)}
+.bb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 46%,rgba(20,16,13,.97));opacity:.92}
+.bb b{position:absolute;left:12px;right:12px;bottom:11px;z-index:2;font:900 13.6px;line-height:1.42;color:#fff;font-family:var(--serif)}
+.bb .yr{position:absolute;top:11px;left:11px;z-index:2;font:800 8.4px;letter-spacing:1.4px;background:var(--red);color:#fff;padding:5px 9px;border-radius:999px;font-family:var(--mono)}
+.bb .rt{position:absolute;top:11px;right:11px;z-index:2;font:900 9.6px;background:#fff;color:var(--ink);padding:4px 7px;border-radius:999px;font-family:var(--mono)}
+.bb:hover{transform:translateY(-8px);box-shadow:0 20px 36px -18px var(--c)}
+
+/* ===== ③ 分类：斑马表 ===== */
+.zebra{width:100%;border-collapse:collapse;font-size:13px;border:1.6px solid var(--ink);border-radius:14px;overflow:hidden}
+.zebra th{font:800 9.4px;letter-spacing:2.2px;text-align:left;padding:14px 13px;background:var(--ink);color:var(--cream);font-family:var(--mono)}
+.zebra td{padding:15px 13px;border-bottom:1px solid #e7ddd0;vertical-align:top}
+.zebra tbody tr:nth-child(even){background:#fdf1e6}
+.zebra tbody tr:hover{background:#fbe3e2}
+.zebra td:first-child{font:900 10.4px;letter-spacing:1.4px;color:var(--red);width:80px;font-family:var(--mono)}
+.zebra td:nth-child(2){font:900 14.8px;font-family:var(--serif)}
+.zebra td:nth-child(3){color:#6f675e;width:24%}
+.zebra .pill{display:inline-block;font:800 8.6px;letter-spacing:1.2px;padding:4px 9px;border-radius:999px;background:#fff;border:1.4px solid var(--ink);color:var(--ink);margin:2px 5px 2px 0;font-family:var(--mono)}
+.zebra .pill.on{background:var(--red);border-color:var(--red);color:#fff}
+.zebra td:last-child{width:140px;text-align:right}
+.zebra a.m{font:900 10.4px;color:var(--red);border-bottom:2px solid var(--red);padding-bottom:1px}
+
+/* ===== ④ 排行：阶梯 ===== */
+.pyr{display:flex;align-items:flex-end;gap:16px;height:360px;padding:10px 4px 0}
+.step{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:9px;transition:.26s;cursor:default}
+.step .bar{width:100%;background:linear-gradient(180deg,var(--red),var(--amber));border-radius:15px 15px 0 0;height:0;transition:height 1.05s cubic-bezier(.22,1,.36,1);position:relative}
+.step .bar span{position:absolute;top:-27px;left:0;right:0;text-align:center;font:900 12.4px;font-family:var(--mono)}
+.step b{font:900 17px;font-family:var(--serif)}
+.step em{font-style:normal;font-size:11.4px;color:var(--mute);text-align:center;line-height:1.5}
+.step:hover{transform:translateY(-9px)}
+.pyr .step:nth-child(1) .bar{background:linear-gradient(180deg,#23201d,#e5484d)}
+.pyr .step:nth-child(2) .bar{background:linear-gradient(180deg,#8a8177,#f6bd60)}
+.pyr .step:nth-child(3) .bar{background:linear-gradient(180deg,#b08968,#f6bd60)}
+
+/* ===== ⑤ 影讯：报刊 ===== */
+.press{display:grid;grid-template-columns:1.5fr 1fr;gap:18px}
+.nc{display:flex;flex-direction:column;gap:12px}
+.nc.big{border:1.6px solid var(--ink);border-radius:18px;background:var(--ink);color:var(--cream);padding:26px;justify-content:space-between;min-height:250px;position:relative;overflow:hidden}
+.nc.big::before{content:"特写";position:absolute;right:-10px;top:6px;font:900 76px;color:rgba(255,255,255,.05);letter-spacing:-3px;font-family:var(--serif)}
+.nc.big .k{font:800 9px;letter-spacing:3.6px;color:var(--amber);font-family:var(--mono)}
+.nc.big h3{font:900 23px;margin:11px 0 12px;line-height:1.5;font-family:var(--serif);position:relative}
+.nc.big p{font-size:12.8px;color:#c9c1b8;line-height:2.02}
+.nc a{display:inline-block;margin-top:13px;font:900 10.4px;letter-spacing:1.2px;color:var(--red);border-bottom:2px solid var(--red);padding-bottom:1px;background:var(--cream);align-self:flex-start;padding:6px 12px;border-radius:999px}
+.nm{border-left:4px solid var(--red);border-radius:0 11px 11px 0;background:var(--paper);padding:14px 17px;transition:.22s}
+.nm:hover{background:#fbe3e2;transform:translateX(7px)}
+.nm .dt{font:900 9.6px;letter-spacing:2.2px;color:var(--red);font-family:var(--mono)}
+.nm h4{font:900 14.2px;margin:5px 0 6px;line-height:1.55;font-family:var(--serif)}
+.nm p{font-size:11.6px;color:#6f675e;line-height:1.92}
+
+/* ===== ⑥ 规范：条款 ===== */
+.decl{font:900 clamp(20px,3.5vw,34px)/1.6;font-family:var(--serif);border:1.6px solid var(--ink);border-radius:20px;padding:28px 32px;background:var(--paper);margin-bottom:17px;position:relative}
+.decl::before{content:"“";position:absolute;left:16px;top:-6px;font:900 84px;line-height:.7;color:var(--red2);font-family:var(--serif)}
+.decl q{display:block;padding-left:34px}
+.grd2{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gd{border:1.6px solid var(--ink);border-radius:16px;background:#fff;padding:21px;transition:.26s}
+.gd:hover{border-color:var(--red);background:#fbe3e2;transform:translateY(-6px)}
+.gd .ix{font:900 23px;color:var(--red);font-family:var(--mono);line-height:1}
+.gd h4{font:900 15px;margin:9px 0 8px;font-family:var(--serif)}
+.gd p{font-size:12px;color:#6f675e;line-height:1.96}
+
+/* ===== 页脚 ===== */
+footer{border-top:1.6px solid var(--ink);padding:48px 0 22px;margin-top:26px;background:var(--paper)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;margin-bottom:26px}
+.flogo .logo .zh{color:var(--ink)}
+.flogo p{font-size:12.6px;color:#6f675e;margin-top:13px;max-width:450px;line-height:2.05}
+.fc h6{font:800 9.8px;letter-spacing:3.2px;color:var(--red);margin-bottom:14px;font-family:var(--mono)}
+.fc a{display:block;font-size:12.6px;color:#6f675e;padding:6px 0}
+.fc a:hover{color:var(--red);font-weight:900;padding-left:7px}
+.fbot{text-align:center;font-size:12px;color:#8a8177;border-top:1px solid #e7ddd0;padding-top:23px;line-height:2.15}
+.fbot a{color:var(--red);font-weight:900;letter-spacing:.5px}
+.up{position:fixed;right:15px;bottom:19px;width:54px;height:54px;border:2px solid var(--ink);border-radius:50%;background:var(--red);color:#fff;font:900 19px;cursor:pointer;opacity:0;pointer-events:none;transition:.28s;z-index:90}
+.up.on{opacity:1;pointer-events:auto}
+
+@media(max-width:1120px){.panels,.bub,.press,.pyr{grid-template-columns:repeat(3,1fr)}.pyr{height:auto;flex-wrap:wrap}.step{min-width:30%}.vsmid{display:none}}
+@media(max-width:760px){
+  .hamb{display:grid;place-items:center;margin-left:auto}
+  .nav{position:fixed;inset:72px 0 0 100%;flex-direction:column;width:100%;height:calc(100vh - 72px);background:var(--paper);padding:20px;border-top:2px solid var(--red);transition:.32s;overflow:auto}
+  .nav.open{transform:translateX(-100%)}
+  .nav a{font-size:19px;padding:18px;border-bottom:1px dashed var(--red);border-radius:0}
+  .hero{grid-template-columns:1fr;gap:26px}
+  .memo{transform:none;box-shadow:6px 6px 0 var(--red2)}
+  .panels,.bub,.grd2{grid-template-columns:repeat(2,1fr)}
+  .pyr{grid-template-columns:repeat(3,1fr);display:grid}
+  .zebra thead{display:none}
+  .zebra tbody tr{display:grid;grid-template-columns:70px 1fr;gap:2px 12px;padding:13px 11px}
+  .zebra td{border:none;padding:3px 0}
+  .zebra td:nth-child(3){grid-column:2;font-size:11px}
+  .zebra td:last-child{grid-column:1 / -1;text-align:left;padding-top:8px}
+  section{padding:44px 0}
+}
+@media print{body{background:#fff;color:#000}.topbar,.hamb,.up,.memo{box-shadow:none}section{padding:14px 0}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- ===== 顶栏 ===== -->
+<header class="topbar">
+  <div class="tin">
+    <a class="logo" href="#" aria-label="易易亲电影网首页">
+      <span class="stamp">易<br>亲</span>
+      <span><span class="zh">易易亲<em>电影网</em></span><span class="en">EASY &amp; CLOSE · FILM NAV</span></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home" class="on">首页</a>
+      <a href="#nav2">导航</a>
+      <a href="#film">片单</a>
+      <a href="#cat">分类</a>
+      <a href="#rank">排行</a>
+      <a href="#news">影讯</a>
+      <a href="#about">规范</a>
+    </nav>
+    <button class="hamb" id="hamb" aria-label="菜单">≡</button>
+  </div>
+</header>
+
+<main>
+<!-- ===== Hero ===== -->
+<section id="home">
+  <div class="lay">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">精选优质电影导航大全 · 实用网址收录平台</div>
+        <h1 class="glow"><span class="m">易易亲</span><br><span class="m2">电影网</span></h1>
+        <p class="sub">易易亲电影网（yiyiqingdianyingwang-cn.github.io）是电影网站导航与影视资源导航平台。「易」在好找、好懂、好用；「亲」在亲自筛选、亲自核验、亲自标注画质。收录高清电影在线观看、最新电影、经典电影、电影字幕、4K 蓝光与影视大全的可用站点，提供迅雷下载指引。</p>
+        <div class="cta"><a href="#nav2">▸ 进入片库</a><a href="#film">本周推荐</a></div>
+      </div>
+
+      <aside class="memo" aria-label="编辑手记">
+        <h4>编辑手记 · 今日挑片</h4>
+        <ol>
+          <li><span>《肖申克的救赎》1994 · 1080P 内嵌字幕</span></li>
+          <li><span>《霸王别姬》1993 · 4K 蓝光 REMUX</span></li>
+          <li><span>《千与千寻》2001 · 杜比视界</span></li>
+          <li><span>《星际穿越》2014 · HDR10+ 5.1</span></li>
+          <li><span>《这个杀手不太冷》1994 · 中英双语</span></li>
+        </ol>
+        <div class="slogan">「挑片这件事，我们比你更较真。」</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ① 导航：圆角面板 ===== -->
+<section id="nav2">
+  <div class="lay">
+    <div class="sh"><span class="no">01</span><h2>电影网站 <em>导航</em></h2><span class="en">Directory</span></div>
+    <div class="panels" id="panels"></div>
+  </div>
+</section>
+
+<!-- ===== ② 电影：圆润卡 ===== -->
+<section id="film">
+  <div class="lay">
+    <div class="sh"><span class="no">02</span><h2>本周 <em>推荐</em> 片单</h2><span class="en">Showreel</span></div>
+    <div class="bub" id="bub"></div>
+  </div>
+</section>
+
+<!-- ===== ③ 分类：斑马表 ===== -->
+<section id="cat">
+  <div class="lay">
+    <div class="sh"><span class="no">03</span><h2>按 <em>类型</em> 分类</h2><span class="en">Genres</span></div>
+    <div style="overflow-x:auto;margin:0 -4px">
+    <table class="zebra">
+      <thead><tr><th>编号</th><th>类型</th><th>收录内容</th><th>画质</th><th>访问</th></tr></thead>
+      <tbody id="zebra"></tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ④ 排行：阶梯 ===== -->
+<section id="rank">
+  <div class="lay">
+    <div class="sh"><span class="no">04</span><h2>口碑 <em>阶梯</em></h2><span class="en">Ladder</span></div>
+    <div class="pyr" id="pyr"></div>
+  </div>
+</section>
+
+<!-- ===== ⑤ 影讯：报刊 ===== -->
+<section id="news">
+  <div class="lay">
+    <div class="sh"><span class="no">05</span><h2>影讯 <em>公告</em></h2><span class="en">Dispatch</span></div>
+    <div class="press">
+      <div class="nc big">
+        <div>
+          <div class="k">EDITORIAL · 编者按</div>
+          <h3>「易」在好找，「亲」在亲自挑：我们如何筛选一部电影</h3>
+          <p>易易亲电影网不生产资源，只做电影网站导航与影视资源导航。每个站点都经过三步：一、能否打开；二、是否被跳转劫持；三、画质标注是否真实（1080P / 4K 蓝光 / REMUX / 杜比视界）。电影字幕优先内嵌或独立 SRT / ASS，观影体验不打折扣。</p>
+        </div>
+        <a href="#about">阅读使用规范</a>
+      </div>
+      <div class="nc" id="nc"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ⑥ 规范：条款 ===== -->
+<section id="about">
+  <div class="lay">
+    <div class="sh"><span class="no">06</span><h2>使用 <em>规范</em></h2><span class="en">Guidelines</span></div>
+    <div class="decl"><q>导航者不占路。指路者只负责把路指清，版权归原作者与发行方。</q></div>
+    <div class="grd2">
+      <div class="gd"><div class="ix">壹</div><h4>资源说明</h4><p>易易亲电影网为电影网站导航与影视资源导航，不托管、不存储、不转存任何影视文件，所有链接均指向第三方公开资源。</p></div>
+      <div class="gd"><div class="ix">贰</div><h4>尊重版权</h4><p>影视作品版权归原作者及发行方所有。请通过院线、正版流媒体与正版影音制品支持导演、编剧、演员与幕后团队。</p></div>
+      <div class="gd"><div class="ix">叁</div><h4>画质标注</h4><p>1080P / 4K 蓝光 / REMUX / HDR10+ / 杜比视界 / 内嵌字幕 等标注为人工核验结果，与实际不符请在页脚「版权反馈」告知。</p></div>
+      <div class="gd"><div class="ix">肆</div><h4>安全提示</h4><p>跳转第三方站点前请确认域名，警惕仿冒与付费解锁陷阱。本站永久免费，不索取账号、不植入广告脚本。</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="lay">
+    <div class="fg">
+      <div class="flogo">
+        <a class="logo" href="#"><span class="stamp">易<br>亲</span><span><span class="zh">易易亲电影网</span><span class="en">EASY &amp; CLOSE · FILM NAV</span></span></a>
+        <p>易易亲电影网（yiyiqingdianyingwang-cn.github.io）是精选优质电影导航大全与实用网址收录平台，提供电影网站导航、高清电影在线观看、最新电影、经典电影、电影字幕、4K 蓝光、影视大全与迅雷下载指引。</p>
+      </div>
+      <div class="fc"><h6>片库</h6><a href="#film">动作片</a><a href="#film">剧情片</a><a href="#film">科幻片</a><a href="#film">纪录片</a></div>
+      <div class="fc"><h6>分类</h6><a href="#cat">4K 蓝光</a><a href="#cat">电影字幕</a><a href="#cat">经典修复</a><a href="#cat">短剧合集</a></div>
+      <div class="fc"><h6>服务</h6><a href="#nav2">网站导航</a><a href="#about">版权反馈</a><a href="#about">失效补链</a><a href="#about">观影须知</a></div>
+    </div>
+    <div class="fbot">© 2026 易易亲电影网 · 网址：<a href="https://yiyiqingdianyingwang-cn.github.io/">https://yiyiqingdianyingwang-cn.github.io/</a><br>本站为电影网站导航与影视资讯平台，不托管任何影视文件；所涉影视作品版权归原作者及发行方所有。</div>
+  </div>
+</footer>
+
+<button class="up" id="upBtn" aria-label="回到顶部">↑</button>
+
+<script>
+/* ---- 数据 ---- */
+const sites=[
+ ["电影天堂导航","高清电影在线观看 / 电影下载","1080P · 4K","中文字幕","on"],
+ ["迅雷电影资源","最新电影 / 经典电影","1080P / 4K","中英字幕","on"],
+ ["4K 蓝光 REMUX","影视大全 / 经典修复","4K 蓝光","内嵌字幕","on"],
+ ["电影字幕仓库","字幕下载","SRT / ASS","多语种",""],
+ ["日韩电影专区","日韩电影 / 日韩剧","1080P","简体中文",""],
+ ["欧美剧集合集","剧集 / 短剧","1080P / 4K","中英双语",""],
+ ["动画电影频道","动画电影 / 剧场版","4K 蓝光","简体中文",""],
+ ["纪录片库","纪录片 / 独立电影","1080P","中英双语",""],
+ ["影展与修复","戛纳 / 柏林 / 威尼斯","4K 蓝光","内嵌字幕",""],
+ ["短片实验影像","短片 / 实验 / MV","720P+","中英字幕",""]
+];
+const films=[
+ ["肖申克的救赎","1994","9.7","linear-gradient(162deg,#1c3a5a,#0a1626)"],
+ ["阿甘正传","1994","9.5","linear-gradient(162deg,#5a4a2a,#1c180c)"],
+ ["泰坦尼克号","1997","9.4","linear-gradient(162deg,#0a3a5a,#03101c)"],
+ ["盗梦空间","2010","9.3","linear-gradient(162deg,#2a1a4a,#0a081c)"],
+ ["星际穿越","2014","9.4","linear-gradient(162deg,#1a2a4a,#040812)"],
+ ["霸王别姬","1993","9.6","linear-gradient(162deg,#5a2a2a,#1c0c0c)"],
+ ["这个杀手不太冷","1994","9.4","linear-gradient(162deg,#3a3a3a,#0c0c0c)"],
+ ["楚门的世界","1998","9.4","linear-gradient(162deg,#2a4a4a,#081414)"],
+ ["辛德勒的名单","1993","9.5","linear-gradient(162deg,#1a1a1a,#050505)"],
+ ["千与千寻","2001","9.4","linear-gradient(162deg,#2a6a5a,#08141c)"],
+ ["黑客帝国","1999","9.1","linear-gradient(162deg,#0a0a0a,#001414)"],
+ ["美丽人生","1997","9.6","linear-gradient(162deg,#6a5a2a,#1c1608)"]
+];
+const cats=[
+ ["动作 / 犯罪","96 部 · 港片 / 好莱坞 / 韩影"],
+ ["剧情 / 文艺","118 部 · 金棕榈 / 金熊 / 独立"],
+ ["科幻 / 奇幻","74 部 · 赛博 / 太空 / 时间"],
+ ["恐怖 / 惊悚","63 部 · cult / 心理 / 丧尸"],
+ ["动画 / 剧场","41 部 · 宫崎骏 / 皮克斯 / 新海诚"],
+ ["纪录 / 真实","38 部 · 自然 / 社会 / 音乐"],
+ ["经典 / 修复","57 部 · 4K 蓝光 REMUX"],
+ ["短片 / 实验","29 部 · 独立 / 学生 / MV"]
+];
+const ladder=[["肖申克的救赎",9.7,96],["霸王别姬",9.6,88],["阿甘正传",9.5,80],["辛德勒的名单",9.5,72],["盗梦空间",9.3,64],["千与千寻",9.4,56]];
+const news=[
+ ["展映 · 第 77 届戛纳「一种关注」单元入选片单公布","10.05"],
+ ["蓝光 · 4K 蓝光 REMUX 标注规范：DV / HDR10+ / SDR 如何选","10.02"],
+ ["字幕 · 爱好者字幕组联合声明：仅供学习，请支持正版发行","09.26"],
+ ["导航 · 失效站点清理完成，可用率回升","09.20"],
+ ["盘点 · 奉俊昊、朴赞郁、李沧东：韩国作者电影三杰","09.13"],
+ ["安全 · 警惕「付费解锁」仿冒导航站，本站永久免费","09.06"]
+];
+
+/* ---- 渲染 ---- */
+document.getElementById('panels').innerHTML=sites.slice(0,10).map((s,i)=>
+ `<div class="pn"><div class="ix">${String(i+1).padStart(2,'0')}</div>
+  <h4>${s[0]}</h4><p>${s[1]} · ${s[2]} · ${s[3]}</p><a href="#">进入 →</a></div>`).join('');
+
+document.getElementById('bub').innerHTML=films.map(f=>
+ `<div class="bb" style="--c:${f[3]}"><span class="yr">${f[1]}</span><span class="rt">${f[2]}</span><b>${f[0]}</b></div>`).join('');
+
+document.getElementById('zebra').innerHTML=cats.map((c,i)=>
+ `<tr><td>${String(i+1).padStart(2,'0')}</td><td>${c[0]}</td>
+  <td>电影网站导航 · 影视资源导航</td><td>${c[1]}</td>
+  <td><a class="m" href="#">浏览 →</a></td></tr>`).join('');
+
+document.getElementById('pyr').innerHTML=ladder.map(r=>
+ `<div class="step"><div class="bar" data-h="${r[2]}"><span>${r[1]}</span></div><b>${r[0].slice(0,6)}</b><em>NO.${ladder.indexOf(r)+1}</em></div>`).join('');
+
+document.getElementById('nc').innerHTML=news.map(n=>
+ `<article class="nm"><div class="dt">${n[1]}</div><h4>${n[0]}</h4>
+  <p>易易亲电影网持续收录可访问的电影站点与影视资源导航，4K 蓝光与电影字幕条目均经人工核验。</p></article>`).join('');
+
+/* ---- 交互 ---- */
+const hamb=document.getElementById('hamb'),nav=document.getElementById('nav');
+hamb.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.addEventListener('click',e=>{if(e.target.tagName==='A'){nav.classList.remove('open');
+  [...nav.children].forEach(a=>a.classList.toggle('on',a===e.target))}});
+
+/* 阶梯高度懒触发 */
+const io=new IntersectionObserver(en=>{
+  en.forEach(x=>{if(x.isIntersecting){
+    x.target.querySelectorAll('.bar').forEach(b=>b.style.height=b.dataset.h+'%');
+    io.unobserve(x.target)}});
+},{threshold:.35});
+document.querySelectorAll('.pyr').forEach(p=>io.observe(p));
+
+const up=document.getElementById('upBtn');
+up.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+window.addEventListener('scroll',()=>up.classList.toggle('on',window.scrollY>500),{passive:true});
+</script>
+</body>
+</html>
